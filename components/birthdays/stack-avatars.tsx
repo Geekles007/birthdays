@@ -22,7 +22,7 @@ const StackAvatars = ({ people = [] }: StackAvatarsProps) => {
         const color = colors[randomIntFromInterval(0, 10)];
         return (
           <motion.div
-            key={`person-avatar-${person?.birthday}-${person?.name}`}
+            key={`person-avatar-${person?.birthday}-${person?.name}-${index}`}
             style={{ backgroundColor: `${color}` }}
             className={cn(
               'relative -ml-2 mt-1 flex h-9 w-9 items-center justify-center rounded-full border border-solid border-gray-900 first:ml-0'

@@ -10,11 +10,9 @@ type BirthdayUserCardProps = HTMLAttributes<HTMLDivElement> & {
 };
 
 const BirthdayUserCard = ({
-  children,
   className,
   person,
   onClick,
-  ...props
 }: BirthdayUserCardProps) => {
   const date = new Date(person?.birthday);
   return (

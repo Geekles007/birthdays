@@ -1,6 +1,5 @@
 import {
   ChartBar,
-  CirclePlus,
   House,
   Plus,
   Settings,

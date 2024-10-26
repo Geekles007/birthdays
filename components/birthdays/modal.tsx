@@ -2,10 +2,8 @@
 
 import {
   AnimatePresence,
-  MotionConfig,
   motion,
   useSpring,
-  useTransform,
 } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
@@ -30,24 +28,6 @@ const giftAnim = {
   },
   hide: {
     opacity: 0,
-    transition: {
-      duration: 0.3,
-    },
-  },
-};
-
-const animation = {
-  initial: {
-    height: 0,
-  },
-  show: {
-    height: 'auto',
-    transition: {
-      duration: 0.3,
-    },
-  },
-  hide: {
-    height: 0,
     transition: {
       duration: 0.3,
     },
